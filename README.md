@@ -1,4 +1,3 @@
-# HD_artistry
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +7,8 @@
  
 
 <h1>Akshay</h1>
-I do work and im going to 7th grade.social media links:blablahblah@instagram.com 
+I do work and im going to 7th grade,I play basketball and video games.
+      Social media links:blablahblah@instagram.com 
 <h1>Priyanshi</h1>
 I just finished middle school im 14 and going to 9th grade.
 socail media links:blahblahblah@facebook.com
