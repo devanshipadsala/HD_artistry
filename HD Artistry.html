@@ -34,26 +34,54 @@
 			  background-color: #4CAF50;
 			  color: white;
 			}
-			.right {
-			text-align: right;
-			}
+			
 
 			.container{
 				display: flex;
+				padding: 2px 16px;
+				justify-content: space-around;
+				margin: 50px
 			}
 
 			body {
 				font-family: verdana;
+				background: #F5F5DC
 			}
 
-			.background{
-				background: #A155B9
-			}
+			.card {
+				  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+				  transition: 0.3s;
+				  width: 40%;
+				}
+
+			.card:hover {
+				  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+				}
+			.card {
+				  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+				  transition: 0.3s;
+				  width: 40%;
+				}
+
+			.card:hover {
+				  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+				}
+
+			#inner {
+				  width: 50%;
+				  margin: 0 auto;
+				}
 
 		</style>
 </head>
+
+
+
+
 <body class="background">
-	<img src="pasted_image_0-removebg-preview-removebg-preview.png" width="750" height="500" class="center">
+
+	<img src="pasted_image_0-removebg-preview-removebg-preview.png" width="500" height="333.333334" class="center">
+
 	<div class="navbar" id="myNavbar">
 		<a style="font-size:30px" href="HD Artistry.html">home</a>
 		<a style="font-size:30px" href="artwork.html">Artwork</a>
@@ -61,42 +89,40 @@
 		<a style="font-size:30px" href="contact page.html">Contact Us!</a>
 	</div>
 
-	<div style = "position:absolute; left:80px; top:20px; background-color:yellow;">
-	        
-    </div>
 
-		<h2>This website has amazing artwork for you to buy.</h2>
-		<h1>~Jeff</h1>
+	<div class="container center">
 
-		<div class="right">
-		<h2> I love that they can custom make anything I would like!</h2>
-		<h1>~Dave</h1>
-	</div>
-	<div class="container">
-		<div>
-			<img src="Pasted image 1.png" class="left">
+		<div class="card" style="background-color: lightpink">
+			<h1>     </h1>
+			<img src="Pasted image 1.png" class="left" height="207.75" width="300">
 			<h2>This painting highlights the most important aspect of the view. It shows an amazing forest view with a beautiful light peeking through the trees.
 			</h2>
 		</div>
-		<div>
+
+		<div class="card" style="background-color: lightblue">
+			<h1>     </h1>
 			<img src="Pasted image 2.png">
 			<h2>An Exotic picture of a skull with multiple colors,this skull has multiple colors and strokes of paint to make it look amusing and delightful.
 			</h2>
 		</div>
-		<div>
+	</div>
+		<div class="card" style="background-color: lavender" id="inner">
+			<h1>     </h1>
 			<img src="pasted image 3.png">
 			<h2>This Beautiful painting has been made with oil pastels and by using the warm colors to highlight a few aspects of the picture, the artist had made a cozy, relaxing sight to the eyes.
 			</h2>
 		</div>
-	</div>
 
+
+
+	<div class="card" style="background-color: white" id="inner">
 	<h1>~Custom Pricings~</h1>
 		<ul>
 			<li>Oil Painting = $ 1000</li>
 			<li>watercolor Painting = $ 750</li>
 			<li>acrylic Painting = $ 350</li>
 		</ul>
-	
+	</div>
 
 </body>	
 

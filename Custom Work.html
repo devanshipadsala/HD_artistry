@@ -36,18 +36,68 @@
 			}
 
 			.background{
-				background: #A155B9
+				background: #F5F5DC
 			}
 
 			
 			body {
 				font-family: verdana;
+				text-align: center;
 			}
+
+			.flip-card {
+			  background-color: transparent;
+			  width: 300px;
+			  height: 300px;
+			  perspective: 1000px;
+			}
+
+			.flip-card-inner {
+			  position: relative;
+			  width: 100%;
+			  height: 100%;
+			  text-align: center;
+			  transition: transform 0.6s;
+			  transform-style: preserve-3d;
+			  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			}
+
+			.flip-card:hover .flip-card-inner {
+			  transform: rotateY(180deg);
+			}
+
+			.flip-card-front, .flip-card-back {
+			  position: absolute;
+			  width: 100%;
+			  height: 100%;
+			  -webkit-backface-visibility: hidden;
+			  backface-visibility: hidden;
+			}
+
+			.flip-card-front {
+			  background-color: #bbb;
+			  color: black;
+			}
+
+			.flip-card-back {
+			  background-color: lightblue;
+			  color: white;
+			  transform: rotateY(180deg);
+			}
+
+			.container{
+				display: flex;
+				justify-content: space-around;
+			}
+
+
+
 
 		</style>
 </head>
 <body class="background">
-	<div class="container">
+	
+
 		<div class="navbar" id="myNavbar">
 			<a style="font-size:30px" href="HD Artistry.html">home</a>
 			<a style="font-size:30px" href="artwork.html">Artwork</a>
@@ -56,7 +106,8 @@
 		</div>
 
 		<div>
-			<img src="pasted image 0.png">
+			<img src="pasted_image_0-removebg-preview-removebg-preview.png"
+			 width="500" height="333.333334" >
 			<h1>
 				CUSTOM WORK
 			</h1>
@@ -69,18 +120,113 @@
 			<h1>
 				PRICELIST
 			</h1>
-			<h2><ul>
-				<li>Oil Painting = $ 1000</li>
-				<li>watercolor Painting = $ 750</li>
-				<li>acrylic Painting = $ 350</li>
-				<li>chalk pastel = $ 100</li>
-				<li>oil pastels = $ 200</li>
-				<li>charcoal = $ 350</li>
-				<li>graphite = $250</li>
-				<li>Gouache = $550</li>
-			</ul></h2>
-		</div>
-	</div>
+
+			<div class="container">
+				<div class="flip-card">
+ 					 <div class="flip-card-inner">
+  						  <div class="flip-card-front">
+  						  	<img src="custom page oil painting.jpg" height="300" width="300">
+  						  </div>
+  					 <div class="flip-card-back">
+				<h1>Oil Painting = $ 1000</h1>
+						 </div>
+  					</div>
+				</div>
+
+				<div class="flip-card">
+ 					 <div class="flip-card-inner">
+  						  <div class="flip-card-front">
+  						  	<img src="custom page watercolor.jpg" height="300" width="300">
+  						  </div>
+  						  <div class="flip-card-back">
+				<h1>watercolor Painting = $ 750</h1>
+						 </div>
+  					</div>
+				</div>							
+
+				<div class="flip-card">
+ 					 <div class="flip-card-inner">
+  						  <div class="flip-card-front">
+  						  <img src="custom page acrylic.jpg" height="300" width="300">
+  						</div>
+  						<div class="flip-card-back">
+				<h1>acrylic Painting = $ 350</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="flip-card">
+ 					 <div class="flip-card-inner">
+  						  <div class="flip-card-front">
+  						  <img src="custom page chalk pastel.jpg" height="300" width="300">
+  						</div>
+  						<div class="flip-card-back">
+				<h1>chalk pastel = $ 100</h1>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+<div class="container">
+
+				<div class="flip-card">
+ 					 <div class="flip-card-inner">
+  						  <div class="flip-card-front">
+  						  <img src="custom page oil pastel.jpg" height="300" width="300">
+  						</div>
+  						<div class="flip-card-back">
+				<h1>oil pastels = $ 200</h1>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="flip-card">
+ 					 <div class="flip-card-inner">
+  						  <div class="flip-card-front">
+  						  <img src="custom page charcoal.jpg" height="300" width="300">
+  						</div>
+  						<div class="flip-card-back">
+				<h1>charcoal = $ 350</h1>
+					</div>
+				</div>
+			</div>
+
+
+			<div>
+				<div class="flip-card">
+	 					 <div class="flip-card-inner">
+	  						  <div class="flip-card-front">
+	  						  <img src="custom page graphite.jpg" height="300" width="300">
+	  						</div>
+	  						<div class="flip-card-back">
+					<h1>graphite = $250</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div>
+				<div class="flip-card">
+	 					 <div class="flip-card-inner">
+	  						  <div class="flip-card-front">
+	  						  <img src="custom page gouache.jpg" height="300" width="300">
+	  						</div>
+	  						<div class="flip-card-back">
+					<h1>Gouache = $550</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+</div>
+
+</body>
+
+
+		
+
 
 
 
